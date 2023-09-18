@@ -1,0 +1,111 @@
+/* #Basic Styles
+================================================== */
+* {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;padding:0;margin:0}
+
+html, body{margin:0;padding:0;height:100%}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin:0;padding:0;border:0;vertical-align: baseline}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block}
+body {font:15px/1.65em "Noto Sans KR", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;-webkit-text-size-adjust:100%;line-height:16px;letter-spacing:-.06rem}
+
+/* #Links
+================================================== */
+a {text-decoration: none;outline: 0}
+a:hover, a:focus,a:visited{outline:0;text-decoration:underline}
+p a, p a:visited{line-height:inherit;}
+em{font-style:normal}
+
+/* #Lists
+================================================== */
+ol, ul, dl {list-style:none}
+ul{list-style:none outside}
+ol{list-style: decimal}
+ul.square {list-style: square outside}
+ul.circle {list-style: circle outside}
+
+/* #Images
+================================================== */
+img, a img {
+  border: none !important;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  image-rendering: optimizeQuality;
+}
+
+/* #Buttons
+================================================== */
+
+/* #Other elements
+================================================== */
+iframe, object, embed{max-width: 100%}
+
+/* #Misc
+================================================== */
+.hidden {position: absolute;top: 0;visibility: hidden}
+.fl{float:left}
+.fr{float:right}
+.cl{clear:both}
+
+.sr_only{
+  @include sr_only
+}
+
+hr{border:0;position:absolute;width:0;height:0}
+
+select {
+  appearance: none;
+  -webkit-appearance: none; /*Chrome*/
+  -moz-appearance: none; /*Firefox*/
+  background-image:url($imgurl + 'select_icon_arrow.png');
+  background-size:18px;
+  background-position:95% center;
+  background-repeat: no-repeat;
+  padding-right:20px;
+  letter-spacing:-1px;
+}
+select::-ms-expand {
+  display:none;
+} /*IE10,11*/
+
+input{border:none;height:40px;line-height:38px;text-indent:7px}
+select{border:none;min-width:150px;height:40px;padding:0 10px 0 0;line-height:38px;text-indent:7px;color:#999}
+
+
+.txtr{text-align:right !Important}
+.txtl{text-align:left !Important}
+.txtc{text-align:center !Important}
+
+.wid100{width:100px}
+.wid200{width:200px}
+.wid300{width:300px}
+.wid400{width:400px}
+.wid500{width:500px}
+
+.mt10{margin-top:10px}
+.mb10{margin-bottom:10px}
+.mb4{margin-bottom:4px}
+.mb4{margin-bottom:4px}
+
+.flex-column{display:flex;flex-direction:column;}
+
+
+.select_type1{background-color:#3253A7;background-image:url($imgurl + 'select_icon_arrow2.png') !important;
+  background-position:97% center;
+  background-repeat:no-repeat;
+  background-size:12px;
+  padding-left:7px;
+  color:rgba(255,255,255,0.3);
+  height:35px;
+  line-height:35px
+}
+
+
+.flex{display:flex;}
+.w-1_2{width:50%;} 
+.w100{width:100%}
+
+.table_c2{margin-left:10px}

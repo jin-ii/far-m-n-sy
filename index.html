@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>농촌공간계획 의사결정 지원시스템</title>
+    <link rel="stylesheet" href="sass/main.css">
+    <!-- icon- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="wrap">      
+    
+        <section id="lnb">
+            <a href="" class="btn_allmenu"><span class="hidden">전체메뉴</span></a>
+            <ul class="lnb">
+                <li><a href="" class="on">농촌공간 진단 시스템</a>
+                    <ul class="menu">
+                        <li><a href="" class="menu1 on">일반현황 <span class="num">23</span></a></li>
+                        <li><a href="" class="menu2">인구이동</a></li>
+                        <li><a href="" class="menu3">농촌공간</a></li>
+                        <li><a href="" class="menu4">생활서비스</a></li>
+                    </ul>
+                    <div class="sub_menu">
+                        <h2>농촌공간 진단시스템</h2>
+                        <ul>
+                            <li><a href="">자연지리환경</a></li>
+                            <li><a href="">인문환경</a></li>
+                            <li><a href="">토지 이용환경</a></li>
+                            <li><a href="">산업경제 현황</a>
+                                <div class="contents">
+                                    <p class="info">지역을 클릭하면 해당지역 증감현황을
+                                        볼 수 있습니다.</p>
+                                    <h5>충청북도 진천군</h5>
+                                    <div class="chart_area">
+                                        <img src="images/layout/sample_chart.png" alt="연도별 사업체 수 차트 예시">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">농촌재생계획모의</a></li>
+                <li><a href="">농촌공간 재구조화 계획모의</a></li>
+            </ul>
+
+            <ul class="bottom_set">
+                <li><a href=""><span>설정</span></a></li>
+                <li><a href=""><span>로그아웃</span></a></li>
+            </ul>
+        
+        </section>
+        <hr>
+        <!-- header -->
+        <header id="header">
+            <div class="header_wrap">
+                <h1><img src="images/common/logo.png" alt="농촌공간계획 의사결정 지원시스템"></h1>
+                <div class="header_btn_wrap">
+                    <ul class="set_all">
+                        <li><a href="" class="btn">인쇄하기</a></li>
+                        <li><a href="" class="btn">초기화</a></li>
+                        <li><a href="" class="btn">전체보기</a></li>
+                    </ul>
+                    <ul class="set_draw">
+                        <li><a href="" class="btn">거리</a></li>
+                        <li><a href="" class="btn">면적</a></li>
+                        <li><a href="" class="btn">반경</a></li>
+                        <li><a href="" class="btn">도형그리기</a></li>                
+                    </ul>
+                    <select name="" id="">
+                        <option value="분할없음">분할없음</option>
+                    </select>
+                    <a href="" class="roadview">로드뷰</a>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+        <hr>
+        <!-- map -->
+        <section id="map_container">
+            <div class="map_area" style="background:url(images/layout/sample_map.png) no-repeat;width:100%;height:100vh;background-size:cover">
+
+            </div>
+        </section>
+        <!-- //map -->
+    </div>    
+</body>
+</html>
