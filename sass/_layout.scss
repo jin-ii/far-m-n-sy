@@ -2,7 +2,7 @@
 #lnb{width:85px;height:100vh;background:#332A20;position:fixed;left:0;top:0;
     a.btn_allmenu{display:block;width:100%;height:85px;background:url($imgurl + 'icon_allmenu.png') center center no-repeat;}
         .lnb{
-            &>li>a{display:block;color:#666;text-align:center;font-size:13px;padding:10px 4px;background:rgba(0,0,0,0.2);
+            &>li>a{display:block;color:#666;text-align:center;font-size:13px;padding:10px 4px;background:rgba(0,0,0,0.2);word-break:keep-all;
                 color:rgba(255,255,255,0.6);font-weight:100;margin-bottom :1px;
                 &:hover,&.on{text-decoration:none;background:#fff;color:#222;font-weight:400}           
             }        
@@ -36,14 +36,13 @@
         }
     }
     //bottom_set
-    .bottom_set{
+    .bottom_set{@include position($b:20px);
         li{
-            a{display:block;position:relative;width:45px;height:45px;border-radius:50%;color:#fff;text-align:center;width:100%;height:50px;
-                &:before{content:'';display:block;position: absolute;
-                   }
-                &.settings{background:#9D9387 url($imgurl2 + 'icon_settings.png');background-repeat:no-repeat;width:45px;height:45px}
-                &.logout{background:#9D9387 url($imgurl2 + 'icon_logout.png');background-repeat:no-repeat;width:45px;height:45px}
-                span{padding-top:20px}
+            a{display:block;position:relative;color:#D9CCBF;text-align:center;width:100%;font-size:12px;              
+                &:before{@include before;width:45px;height:45px;border-radius:50%;@include position;transform:translate(50%, 50%)}
+                &.settings:before{background:#5C4B37 url($imgurl2 + 'icon_settings.png') center center no-repeat;}
+                &.logout:before{background:#5C4B37 url($imgurl2 + 'icon_logout.png') center center no-repeat}               
+                span{display:block;padding-top:75px}
                 
 
             }
