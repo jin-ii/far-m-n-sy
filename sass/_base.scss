@@ -5,6 +5,7 @@
 html, body{margin:0;padding:0;height:100%}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin:0;padding:0;border:0;vertical-align: baseline}
+  table {border-collapse: collapse;border-spacing: 0}
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block}
 body {font:15px/1.65em "Noto Sans KR", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;-webkit-text-size-adjust:100%;line-height:16px;letter-spacing:-.06rem}
@@ -66,13 +67,18 @@ select {
   background-repeat: no-repeat;
   padding-right:20px;
   letter-spacing:-1px;
+  border:1px solid #ddd;
+  color:#999;
+  min-width:150px;height:48px;line-height:46px;
+  border-radius:3px;text-indent:3px;padding:0 8px;cursor:pointer;
 }
 select::-ms-expand {
   display:none;
 } /*IE10,11*/
 
 input{border:none;height:40px;line-height:38px;text-indent:7px}
-select{border:none;min-width:150px;height:40px;padding:0 10px 0 0;line-height:38px;text-indent:7px;color:#999}
+
+.none{display: none;}
 
 
 .txtr{text-align:right !Important}
@@ -85,23 +91,27 @@ select{border:none;min-width:150px;height:40px;padding:0 10px 0 0;line-height:38
 .wid400{width:400px}
 .wid500{width:500px}
 
+// margin-top
+.mt4{margin-top:4px}
 .mt10{margin-top:10px}
+.mt15{margin-top:15px}
+
+// margin-bottom
+.mb2{margin-bottom:2px}
+.mb4{margin-bottom:4px}
 .mb10{margin-bottom:10px}
-.mb4{margin-bottom:4px}
-.mb4{margin-bottom:4px}
+.mb15{margin-bottom:15px}
+
+
+// margin-left
+.ml4{margin-left:4px}
+
+// margin-right
+.mr4{margin-right:4px}
 
 .flex-column{display:flex;flex-direction:column;}
 
 
-.select_type1{background-color:#3253A7;background-image:url($imgurl + 'select_icon_arrow2.png') !important;
-  background-position:97% center;
-  background-repeat:no-repeat;
-  background-size:12px;
-  padding-left:7px;
-  color:rgba(255,255,255,0.3);
-  height:35px;
-  line-height:35px
-}
 
 
 .flex{display:flex;}

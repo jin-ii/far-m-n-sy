@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>농촌공간계획 의사결정 지원시스템</title>
+    <link rel="stylesheet" href="sass/main.css">
+    <!-- icon- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" defer src="js/main.js"></script>
+</head>
+<body>
+    <div id="wrap">      
+    
+        <section id="lnb">
+            <a href="#" class="btn_allmenu"><span class="hidden">전체메뉴</span></a>
+            <ul class="lnb">
+                <li><a href="#" class="on">농촌공간 진단 시스템</a>
+                    <ul class="menu">
+                        <li><a href="" class="menu1 on">일반현황 <span class="num">23</span></a>
+                        
+                            <!-- sub_menu -->
+                            <div class="sub_menu">
+                                <h2 class="menu1_tit"></h2>
+                                <ul>
+                                    <li><a href="">자연지리환경 <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href="">인문환경  <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href="">토지 이용환경  <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href="" class="on">산업경제 현황 <i class="fa-solid fa-chevron-right"></i></a>
+                                        <div class="sub_menu_contents">
+                                            <p class="info"><i class="fa-solid fa-circle-info"></i>지역을 클릭하면 해당지역 증감현황을
+                                                볼 수 있습니다.</p>
+                                            <h5 class="h5_title">충청북도 진천군</h5>
+                                            <div class="chart_area">
+                                                <img src="images/layout/sample_chart.png" alt="연도별 사업체 수 차트 예시">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //sub_menu -->
+                        
+                        </li>
+                        <li><a href="" class="menu2">인구이동</a>
+                            <div class="sub_menu" style="display: none;">
+                                <h2 class="menu1_tit"></h2>
+                                <ul>
+                                    <li><a href="">인구 분포도 <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href="">전출입 인구이동  <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href="">생활인구 이동  <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href="">인구이동 중심지 분석</a></li>
+                                    <li><a href="">인구분포 집중화 분석</a></li>
+                                </ul>
+                            </div>                        
+                        </li>
+                        <li><a href="" class="menu3">농촌공간</a>
+                            <div class="sub_menu" style="display: none;">
+                                <h2 class="menu1_tit"></h2>
+                                <ul>
+                                    <li><a href="">핵심시설 분포도 <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href="">핵심시설 서비스권역 <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href="">핵심권역 접근성 <i class="fa-solid fa-chevron-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="" class="menu4">생활서비스</a>
+                            <div class="sub_menu" style="display: none;">
+                                <h2 class="menu1_tit"></h2>
+                                <ul>
+                                    <li><a href="">생활서비스(복지)진단 <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href="">생활서비스(문화)진단 <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href="">생활서비스(보육)진단<i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href="">생활서비스(체육)진단<i class="fa-solid fa-chevron-right"></i></a></li>
+                                    <li><a href="">생활서비스(휴게편의)진단<i class="fa-solid fa-chevron-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <li><a href="">농촌 재생 계획모의</a>
+                    <ul class="menu" style="display: none;">
+                        <li><a href="" class="menu5 on">복지계획 <span class="num">23</span></a></li>
+                        <li><a href="" class="menu6">문화계획</a></li>
+                        <li><a href="" class="menu7">보육계획</a></li>
+                        <li><a href="" class="menu8">체육계획</a></li>
+                        <li><a href="" class="menu9">휴게편의</a></li>
+                    </ul>
+                
+                </li>
+                <li><a href="">농촌 공간 재구조화 계획모의</a></li>
+            </ul>
+
+            <ul class="bottom_set">
+                <li><a href="" class="settings"><span>설정</span></a></li>
+                <li><a href="" class="logout"><span>로그아웃</span></a></li>
+            </ul>
+        
+        </section>
+        
+        <hr>
+        <!-- main_outer -->
+        <div id="main_sec">
+        <!-- header -->
+        <header id="header">
+            <div class="header_wrap">
+                <h1><a href=""><img src="images/common/logo.png" alt="농촌공간계획 의사결정 지원시스템"></a></h1>
+                <div class="header_btn_wrap">
+                    <ul class="set_all">
+                        <li><a href="" class="btn btn_color1 btn_print">인쇄하기</a></li>
+                        <li><a href="" class="btn btn_color1 btn_refresh">초기화</a></li>
+                        <li><a href="" class="btn btn_color1 btn_all">전체보기</a></li>
+                    </ul>
+                    <ul class="set_draw">
+                        <li><a href="" class="btn btn_distance">거리</a></li>
+                        <li><a href="" class="btn btn_extent">면적</a></li>
+                        <li><a href="" class="btn btn_radius">반경</a></li>
+                        <li><a href="" class="btn btn_draw">도형그리기</a></li>                
+                    </ul>
+                    <select name="" id="" class="m_select_type">
+                        <option value="분할없음">분할없음</option>
+                    </select>
+                    <ul class="toggle_menu ml4">
+                        <li><a href="" class="on">일반</a></li>
+                        <li><a href="">위성</a></li>
+                        <li><a href="">없음</a></li>
+                    </ul>
+                    <a href="" class="btn btn_roadview ml4">로드뷰</a>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+        <hr>
+        <!-- map -->
+        <section id="map_container">
+            <div class="map_area" style="background:url(images/layout/sample_map.png) no-repeat;width:100%;height:calc(100vh - 75px);background-size:cover"></div>
+            
+            <div class="map_zoom">
+                <a href="" class="zoom_up"><i class="fa-solid fa-plus"><span class="hidden">확대</span></i></a>
+                <a href="" class="zoom_down"><i class="fa-solid fa-minus"><span class="hidden">축소</span></i></a>
+            </div>
+            <hr>
+
+            <!-- 범례 -->
+            <div class="legend_type1">
+                <ul class="list">
+                    <li>3,160.29 초과</li>
+                    <li>2,663.57 ~ 3,160.29 이하</li>
+                    <li>2,166.86 ~ 26,663.57 이하</li>
+                    <li>1,670.14 ~ 2,166.86 이하</li>
+                    <li>1,173.43 ~ 1,670.14 dlgk</li>
+                    <li>676.71 ~ 1,173.43이하</li>
+                    <li>676.71 이하</li>
+                </ul>
+                <div class="check_area">
+                    <ul>
+                        <li> 
+                            <div class="checkbox">  
+                                <input id="check1" type="checkbox" name="check" value="check1" checked>  
+                                <label for="check1"></label>
+                                <br>
+                                <input id="check2" type="checkbox" name="check" value="check2">  
+                                <label for="check2" class="check2"></label>  
+                                <br>
+                                <input id="check3" type="checkbox" name="check" value="check3">  
+                                <label for="check3" class="check3"></label>  
+                                <br>
+                                <input id="check4" type="checkbox" name="check" value="check4">  
+                                <label for="check4" class="check4"></label>
+                                <br>
+                                <input id="check5" type="checkbox" name="check" value="check5">  
+                                <label for="check5" class="check5"></label>
+                                <br>
+                                <input id="check6" type="checkbox" name="check" value="check6">  
+                                <label for="check6" class="check6"></label>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="" class="btn_data_visual">데이터 시각화</a>
+            </div>
+            <!-- //범례 -->
+
+
+        </section>
+        <!-- //map -->
+       </div>  
+       <!-- //main_outer -->
+
+    </div>    
+</body>
+</html>

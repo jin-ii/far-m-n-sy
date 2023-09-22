@@ -131,3 +131,9 @@
   }
 }
 
+@mixin desktop2 {
+  @media (min-width: #{$breakpoint-desktop}) and (max-width: 1860px ){
+    @content;
+  }
+}
+
