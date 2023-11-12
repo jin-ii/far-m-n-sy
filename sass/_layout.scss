@@ -211,6 +211,24 @@ ul.toggle_menu{display:flex;border:1px solid #ddd;border-radius:3px;height:48px;
     }
 }
 
+.legend_type1_add{display:flex;@include position($l:0px,$b:0);z-index:2;width:400px;background:rgba(56,17,17,0.3);padding:30px 20px;
+    .legend_before{flex:1;padding-right:20px;border-right:1px solid rgba(0,0,0,0.2)}
+    .legend_after{flex:1;padding-left:20px}
+    .check_list_wrap{position:relative}
+    .title{
+        input{margin-right:7px;}
+        label{display:flex;align-items:center;color:#222;
+            input{line-height:20px;height:auto}
+            h3{font-size:14px;line-height:28px}
+            h4{font-size:14px;line-height:28px}
+        }
+    }
+    
+    ul.list{
+        li{width:calc(100% - 30px)}
+    }
+    .check_area{@include position($t:0,$r:-2px)}
+}
 // checkbox custom
 
 .check_area{@include position($r:12px,$t:30px);
@@ -241,6 +259,13 @@ ul.toggle_menu{display:flex;border:1px solid #ddd;border-radius:3px;height:48px;
     th{background:#776756;color:rgba(255,255,255,0.6);height:35px;line-height:35px}
     td{color:#666;border-bottom:1px solid #ddd}
 }
+// .table_type3{width:100%;max-height:600px;overflow-y:scroll;
+//     table{width:100%;}
+//     th,td{padding:10px 12px;text-align:center}
+//     th{background:#776756;color:rgba(255,255,255,0.6);}
+//     td{color:#666;border-bottom:1px solid #ddd}
+// }
+
 
 /* 2-1 농촌재생계획모의 > 복지계획 */
 
@@ -286,4 +311,45 @@ ul.toggle_menu{display:flex;border:1px solid #ddd;border-radius:3px;height:48px;
         }
         
     }
+}
+
+// 3-2 핵심권역 접근성
+.table_type_list{position:relative;border-top:2px solid #666;margin-top:12px;max-height:600px;overflow-y:scroll;
+    ul{display:flex;flex-direction:column;
+        li{width:100%;border-bottom:1px solid #ddd;padding:8px 0;display:flex;
+        input{cursor:pointer;margin:-6px 10px 0 0}
+        .cont{
+            p{line-height:25px}
+            span{width:55px;display:flex;color:#999;padding-right:7px;font-size:13px}
+        }      
+        }
+    }  
+}
+
+.sisul_add{display:block;height:50px;line-height:50px;width:100%;background:#dfdfdf url($imgurl + "icon_add_more.png") 70px 50% no-repeat;text-align:center;color:#666;font-size:14px;margin:10px 0;
+    &:hover{background-color:#cccccc;text-decoration:none}
+}
+
+.btn_setwrap{display:flex;justify-content:end;margin-top:12px;
+    .btn_delete{height:35px;line-height:35px;font-size:13px;padding:0 18px;display:inline-block;color:#fff;border-radius:3px;background:#ee7777;
+        border:0;
+        &:hover{text-decoration:none;background:#eb5f5f}
+    }
+}
+.label_type1{display:flex;padding:10px 0;
+   span{width:40%;display:flex;align-items: center;padding-right:10px;color:#666;font-size:15px;}
+}
+
+.btn_access_analysis{cursor:pointer;display:block;width:100%;height:55px;line-height:55px;color:#fff;font-weight:700;background:#382C2C;border:0;
+    &:hover{background:#1f1818}
+}
+
+
+.progress_container2{display:flex;align-items:center;width:100%;justify-content:center;padding:20px 0 0 0;    
+    .progress_bar{flex:5;}
+    .progress_line{width:100%;height:8px;background-color: #ddd;border-radius:20px;}
+    .played{width: 100%;height:100%;background-color: #d3d3d3;border-radius:10px;position:relative;
+        span.bar{display:block;border-radius:3px;background-color:#fff;width:16px;height:16px;border-radius:50%;
+            @include position($l:20px,$t:-4px)}
+    }  
 }

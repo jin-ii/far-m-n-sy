@@ -2,6 +2,8 @@
 /* #Basic Styles
 ================================================== */
 * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -126,8 +128,7 @@ iframe, object, embed {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   border: 0;
 }
 
@@ -907,6 +908,57 @@ ul.toggle_menu li a:hover, ul.toggle_menu li a.on {
   background-color: #65BDDC;
 }
 
+.legend_type1_add {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  z-index: 2;
+  width: 400px;
+  background: rgba(56, 17, 17, 0.3);
+  padding: 30px 20px;
+}
+.legend_type1_add .legend_before {
+  flex: 1;
+  padding-right: 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.legend_type1_add .legend_after {
+  flex: 1;
+  padding-left: 20px;
+}
+.legend_type1_add .check_list_wrap {
+  position: relative;
+}
+.legend_type1_add .title input {
+  margin-right: 7px;
+}
+.legend_type1_add .title label {
+  display: flex;
+  align-items: center;
+  color: #222;
+}
+.legend_type1_add .title label input {
+  line-height: 20px;
+  height: auto;
+}
+.legend_type1_add .title label h3 {
+  font-size: 14px;
+  line-height: 28px;
+}
+.legend_type1_add .title label h4 {
+  font-size: 14px;
+  line-height: 28px;
+}
+.legend_type1_add ul.list li {
+  width: calc(100% - 30px);
+}
+.legend_type1_add .check_area {
+  position: absolute;
+  top: 0;
+  right: -2px;
+}
+
 .check_area {
   position: absolute;
   top: 30px;
@@ -1117,4 +1169,136 @@ ul.toggle_menu li a:hover, ul.toggle_menu li a.on {
   text-decoration: none;
   color: #222;
   font-weight: bold;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.table_type_list {
+  position: relative;
+  border-top: 2px solid #666;
+  margin-top: 12px;
+  max-height: 600px;
+  overflow-y: scroll;
+}
+.table_type_list ul {
+  display: flex;
+  flex-direction: column;
+}
+.table_type_list ul li {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+  display: flex;
+}
+.table_type_list ul li input {
+  cursor: pointer;
+  margin: -6px 10px 0 0;
+}
+.table_type_list ul li .cont p {
+  line-height: 25px;
+}
+.table_type_list ul li .cont span {
+  width: 55px;
+  display: flex;
+  color: #999;
+  padding-right: 7px;
+  font-size: 13px;
+}
+
+.sisul_add {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  background: #dfdfdf url("../images/common/icon_add_more.png") 70px 50% no-repeat;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.sisul_add:hover {
+  background-color: #cccccc;
+  text-decoration: none;
+}
+
+.btn_setwrap {
+  display: flex;
+  justify-content: end;
+  margin-top: 12px;
+}
+.btn_setwrap .btn_delete {
+  height: 35px;
+  line-height: 35px;
+  font-size: 13px;
+  padding: 0 18px;
+  display: inline-block;
+  color: #fff;
+  border-radius: 3px;
+  background: #ee7777;
+  border: 0;
+}
+.btn_setwrap .btn_delete:hover {
+  text-decoration: none;
+  background: #eb5f5f;
+}
+
+.label_type1 {
+  display: flex;
+  padding: 10px 0;
+}
+.label_type1 span {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  color: #666;
+  font-size: 15px;
+}
+
+.btn_access_analysis {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  color: #fff;
+  font-weight: 700;
+  background: #382C2C;
+  border: 0;
+}
+.btn_access_analysis:hover {
+  background: #1f1818;
+}
+
+.progress_container2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 20px 0 0 0;
+}
+.progress_container2 .progress_bar {
+  flex: 5;
+}
+.progress_container2 .progress_line {
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 20px;
+}
+.progress_container2 .played {
+  width: 100%;
+  height: 100%;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  position: relative;
+}
+.progress_container2 .played span.bar {
+  display: block;
+  border-radius: 3px;
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  left: 20px;
+}
