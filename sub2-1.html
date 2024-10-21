@@ -229,10 +229,52 @@
                                 <a href="" class="btn_add"></a>
                            </div>
 
-                           <div class="detail_drag_box">
-                                <a href="" class="btn_close"><span class="hidden">닫기</span></a>
-                                <!-- 1 -->
-                                <div class="analysis_wrap">
+                           <div class="drag_box_wrapper scrollbar_custom">
+                            <div class="detail_drag_box">
+                                
+                                    <!-- 1 -->
+                                    <div class="analysis_wrap">
+                                        <i class="drag_icon"></i>
+                                        <a href="" class="btn_close"><span class="hidden">닫기</span></a>
+                                        <div class="analysis_sel">  
+                                       
+                                            <select name="" id="" class="">
+                                                <option value="주택">주택</option>
+                                            </select>   
+                                            <button class="btn_analysis">분석</button>
+                                        </div>
+                                        <!-- table -->
+                                        <div class="table_type1">
+                                            <table>
+                                                <colgroup>
+                                                    <col width="">
+                                                    <col width="">
+                                                    <col width="">
+                                                    <col width="">
+                                                </colgroup>
+                                                <tbody>
+                                                <tr>
+                                                    <th>0점</th>
+                                                    <th>1점</th>
+                                                    <th>2점</th>
+                                                    <th>3점</th>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>0-50</td>
+                                                    <td>0-350</td>
+                                                    <td>0-500</td>
+                                                    <td>500-</td>
+                                                </tr>                                      
+                            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //table -->
+                                </div>
+                                 <!-- 1 -->
+                                 <div class="analysis_wrap">
+                                    <i class="drag_icon"></i>
+                                    <a href="" class="btn_close"><span class="hidden">닫기</span></a>
                                     <div class="analysis_sel">  
                                         <select name="" id="" class="">
                                             <option value="주택">주택</option>
@@ -243,8 +285,10 @@
                                     <div class="table_type1">
                                         <table>
                                             <colgroup>
-                                                <col width="60%">
-                                                <col width="40%">
+                                                <col width="">
+                                                <col width="">
+                                                <col width="">
+                                                <col width="">
                                             </colgroup>
                                             <tbody>
                                             <tr>
@@ -265,44 +309,50 @@
                                 </div>
                                 <!-- //table -->
                             </div>
-                           </div>
-                           <!-- //1 -->
-
-                            <!-- 1 -->
-                            <div class="analysis_wrap">
-                                <div class="analysis_sel">  
-                                    <select name="" id="" class="">
-                                        <option value="주택">주택</option>
-                                    </select>   
-                                    <button class="btn_analysis">분석</button>
+                                    <!-- 1 -->
+                                    <div class="analysis_wrap">
+                                        <i class="drag_icon"></i>
+                                        <a href="" class="btn_close"><span class="hidden">닫기</span></a>
+                                        <div class="analysis_sel">  
+                                            <select name="" id="" class="">
+                                                <option value="주택">주택</option>
+                                            </select>   
+                                            <button class="btn_analysis">분석</button>
+                                        </div>
+                                        <!-- table -->
+                                        <div class="table_type1">
+                                            <table>
+                                                <colgroup>
+                                                    <col width="">
+                                                    <col width="">
+                                                    <col width="">
+                                                    <col width="">
+                                                </colgroup>
+                                                <tbody>
+                                                <tr>
+                                                    <th>0점</th>
+                                                    <th>1점</th>
+                                                    <th>2점</th>
+                                                    <th>3점</th>
+                                                </tr>
+                                                <tr>                                        
+                                                    <td>0-50</td>
+                                                    <td>0-350</td>
+                                                    <td>0-500</td>
+                                                    <td>500-</td>
+                                                </tr>                                      
+                            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- //table -->
                                 </div>
-                                <!-- table -->
-                                <div class="table_type1">
-                                    <table>
-                                        <colgroup>
-                                            <col width="60%">
-                                            <col width="40%">
-                                        </colgroup>
-                                        <tbody>
-                                        <tr>
-                                            <th>0점</th>
-                                            <th>1점</th>
-                                            <th>2점</th>
-                                            <th>3점</th>
-                                        </tr>
-                                        <tr>                                        
-                                            <td>0-50</td>
-                                            <td>0-350</td>
-                                            <td>0-500</td>
-                                            <td>500-</td>
-                                        </tr>                                      
-                    
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- //table -->
-                        </div>
-                        <!-- //1 -->  
+                                <!-- //1 -->  
+                              </div>
+
+                           </div>
+
+                        
                         <!-- bottom_btn -->
                           <div class="bottom_btn">
                             <button class="btn_result_add">결과합치기</button>
@@ -313,7 +363,7 @@
                        
                     <div class="limit_setting">
                         <h5 class="h5_title2">용도 지구 제한조건 설정</h5>                   
-                        <div class="checkbox_wrap">                                           
+                        <div class="checkbox_wrap scrollbar_custom">                                           
                             <label>
                                 <input type="checkbox" name="custom-checkbox">
                                 <span class="custom-checkbox"></span>
@@ -417,7 +467,16 @@
         <hr>
         <!-- map -->
         <section id="map_container">
-            <div class="map_area">
+
+            <div class="main_tab">
+                <ul>
+                    <li><a href="" class="on">종합분석</a></li>
+                    <li><a href="">주택분석</a></li>
+                    <li><a href="">농지분석</a></li>
+                </ul>
+            </div>
+            <div class="map_area2">
+
 
                
 
